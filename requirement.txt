@@ -1,2 +1,4 @@
-# Required packages (conceptual)
-python>=3.6
+# requirements.txt
+requests==2.31.0
+prettytable==3.9.0
+colorama==0.4.6
