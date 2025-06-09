@@ -17,6 +17,6 @@ Unauthorized IP tracking violates privacy laws in many jurisdictions. Always obt
 
 ## Installation
 ```bash
-git clone https://github.com/abhishek-1/ip-finder-tool.git
+git clone https://github.com/iamabhishek-1/ip-finder-tool.git
 cd ip-finder-tool
 pip install -r requirements.txt
