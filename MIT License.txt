@@ -1,0 +1,11 @@
+MIT License
+
+Copyright (c) [year] [yourname]
+
+Permission is hereby granted... [standard MIT text]...
+
+ADDITIONAL ETHICAL RESTRICTION:
+This software shall not be used to:
+- Track individuals without consent
+- Violate privacy laws (GDPR, CFAA, etc.)
+Any such use automatically terminates all rights under this license.
