@@ -1,11 +1,78 @@
-MIT License
 
-Copyright (c) [year] [yourname]
+### 2. ip_finder.py (Updated)
+```python
+#!/usr/bin/env python3
+# Conceptual IP Finder by Abhi Byte
 
-Permission is hereby granted... [standard MIT text]...
+import os
+import socket
+import json
+import random
+from datetime import datetime
+from utils.geoip import get_geo_info
+from utils.device_detector import get_device_info
 
-ADDITIONAL ETHICAL RESTRICTION:
-This software shall not be used to:
-- Track individuals without consent
-- Violate privacy laws (GDPR, CFAA, etc.)
-Any such use automatically terminates all rights under this license.
+class IPFinder:
+    def __init__(self):
+        self.author = "Abhi Byte"
+        self.version = "1.0.0"
+        self.social_media = {
+            "YouTube": "youtube.com/abhibyte",
+            "Instagram": "instagram.com/abhibyte",
+            "GitHub": "github.com/abhibyte",
+            "Website": "abhibyte.me"
+        }
+
+    def display_banner(self):
+        print(r"""
+         _____ _____   _____ ___  ________  ________  ___  ___     
+        |_   _|  _  \ /  ___/ _ \ | ___ \ |  _  |  \/  | / _ \    
+          | | | |_| | | |__/ /_\ \| |_/ / | | | | .  . |/ /_\ \   
+          | | |  ___/ |  __|  _  ||  __/  | | | | |\/| ||  _  |   
+          | | | |     | |__| | | || |     \ \_/ / |  | || | | |   
+          \_/ \_|     \____\_| |_/\_|      \___/\_|  |_/\_| |_/   
+        """)
+        print(f"Version {self.version} | Created by {self.author}\n")
+
+    def generate_ip(self, version=4):
+        if version == 4:
+            return ".".join(map(str, (random.randint(0, 255) for _ in range(4)))
+        else:
+            return ":".join([f"{random.randint(0, 65535):x}" for _ in range(8)])
+
+    def run(self):
+        self.display_banner()
+        
+        # Conceptual target input
+        target = input("Enter target identifier (conceptual): ").strip()
+        
+        print("\n[+] Simulating information gathering...")
+        
+        # Generate conceptual IPs
+        ipv4 = self.generate_ip(4)
+        ipv6 = self.generate_ip(6)
+        
+        print(f"\n[+] Conceptual IP Addresses Found:")
+        print(f"IPv4: {ipv4}")
+        print(f"IPv6: {ipv6}")
+        
+        # Get conceptual information
+        geo_info = get_geo_info(ipv4)
+        device_info = get_device_info()
+        
+        print("\n=== Geolocation Information ===")
+        print(json.dumps(geo_info, indent=4))
+        
+        print("\n=== Device Information ===")
+        print(json.dumps(device_info, indent=4))
+        
+        print("\n=== Social Media ===")
+        for platform, url in self.social_media.items():
+            print(f"{platform}: {url}")
+        
+        print("\n[!] REMINDER: This is a conceptual demonstration only.")
+        print("[!] Always respect privacy and follow applicable laws.")
+
+if __name__ == "__main__":
+    tool = IPFinder()
+    tool.run()

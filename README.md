@@ -1,50 +1,22 @@
-# IP Information Logger - Educational Use Only
+# IP Finder Tool by Abhi Byte
 
-![Warning](https://img.shields.io/badge/WARNING-For%20Educational%20Use%20Only-red) 
-![License](https://img.shields.io/badge/License-MIT%20%2B%20Ethical%20Restrictions-green)
+![Banner](https://via.placeholder.com/800x200?text=IP+Finder+Tool+by+Abhi+Byte)
 
-## ⚠️ IMPORTANT DISCLAIMER
+A conceptual demonstration of IP information gathering tool (for educational purposes only).
 
-**This tool is created solely for educational purposes in cybersecurity and ethical hacking. Unauthorized use to collect information without explicit consent is illegal. The developer assumes no liability for any misuse of this software.**
+## Features
+- IPv4 and IPv6 address detection (conceptual)
+- Geolocation approximation
+- Device information
+- Network details
+- Mobile device specifics
 
-## 📌 Purpose
+## Disclaimer
+⚠️ **This is for educational purposes only.**  
+Unauthorized IP tracking violates privacy laws in many jurisdictions. Always obtain proper consent.
 
-This project demonstrates how web-based information collection works, intended for:
-- Cybersecurity education
-- Ethical hacking training
-- Penetration testing (with authorization)
-- Understanding web tracking mechanisms
-
-## 🔒 Ethical Usage Policy
-
-By using this tool, you agree to:
-✔️ Obtain explicit written consent before any data collection  
-✔️ Use only on systems you own or have permission to test  
-✔️ Clearly disclose all data collection to targets  
-✔️ Never use for malicious purposes  
-✔️ Comply with all applicable laws (GDPR, CFAA, etc.)
-
-## 🚫 Prohibited Uses
-- Tracking individuals without consent
-- Any illegal surveillance
-- Harassment or stalking
-- Fraudulent activities
-- Violating privacy rights
-
-## 📋 Features
-
-Basic information collected (when properly configured):
-- IP address
-- User agent (browser/OS)
-- Timestamp
-- Referrer URL
-- Geolocation data (country/city level via API)
-
-## 🛠️ Setup Instructions
-
-### Termux/Linux Installation
+## Installation
 ```bash
-pkg install php git -y
-git clone https://github.com/yourusername/ip-info-logger.git
-cd ip-info-logger
-php -S 0.0.0.0:8080
+git clone https://github.com/abhibyte/ip-finder-tool.git
+cd ip-finder-tool
+pip install -r requirements.txt

@@ -1,0 +1,6 @@
+MIT License
+
+Copyright (c) 2023 Abhi Byte
+
+Permission is hereby granted...
+[Include full MIT license text]
